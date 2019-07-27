@@ -1,0 +1,29 @@
+{
+    "name": "freedomsex/key-value-storage",
+    "description": "A simple key-value storage based on PSR-6, Caching Interface.",
+    "type": "library",
+    "version": "0.0.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tebaly",
+            "email": "support@freedomsex.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FreedomSex\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FreedomSex\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    }
+}
