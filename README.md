@@ -1,6 +1,7 @@
 # Key-Value Storage
 
-A simple key-value storage based on PSR-6, Caching Interface.
+A simple key-value storage based on PSR-6, Caching Interface. 
+Inspired by \Memcached() 
 
 ```yaml
 # Symfony config cache.yaml

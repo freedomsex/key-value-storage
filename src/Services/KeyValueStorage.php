@@ -17,7 +17,7 @@ class KeyValueStorage
 
     public function clear($key)
     {
-        $this->cache->deleteItem($this->item($key));
+        $this->cache->deleteItem($key);
     }
 
     public function item($key)
