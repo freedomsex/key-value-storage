@@ -40,7 +40,10 @@ class KeyValueStorage
     {
         $cacheItem = $this->item($key);
         $cacheItem->set($value);
-        $cacheItem->expiresAfter($expires);
+        if ($expires) {
+            $point = new \DateTime('+'.$expires.' seconds');
+            $cacheItem->expiresAt($point);
+        }
         $this->cache->save($cacheItem);
     }
 }
