@@ -2,7 +2,7 @@
     "name": "freedomsex/key-value-storage",
     "description": "A simple key-value storage based on PSR-6, Caching Interface.",
     "type": "library",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "license": "MIT",
     "authors": [
         {
