@@ -31,7 +31,7 @@ class AbstractStorage
 
     public function load($key, $default = null)
     {
-        return $this->item($key)->get();
+        return $this->item($key)->get() ?? $default;
     }
 
     public function point($expires)

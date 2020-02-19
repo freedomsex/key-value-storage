@@ -36,7 +36,7 @@ class AttachedStorage extends AbstractStorage
 
     public function load($key, $default = null)
     {
-        return $this->extract($this->item($key));
+        return $this->extract($this->item($key)) ?? $default;
     }
 
     public function attach($item, $expires)
