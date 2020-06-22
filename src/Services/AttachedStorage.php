@@ -31,6 +31,9 @@ class AttachedStorage extends AbstractStorage
     public function extract($item, $index = 'value')
     {
         $wrapper = $item->get();
+        if (!$wrapper or !is_array($wrapper)) {
+            return null;
+        }
         return $wrapper[$index];
     }
 
