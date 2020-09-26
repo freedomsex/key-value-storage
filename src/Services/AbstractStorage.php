@@ -18,11 +18,6 @@ class AbstractStorage
         $this->cache->clear();
     }
 
-    public function deleteItem($key)
-    {
-        $this->cache->deleteItem($key);
-    }
-
     public function item($key)
     {
         return $this->cache->getItem($key);
@@ -53,6 +48,11 @@ class AbstractStorage
             $item->expiresAt($expires);
         }
         $this->cache->save($item);
+    }
+
+    public function deleteItem($key)
+    {
+        $this->cache->deleteItem($key);
     }
 
 }
