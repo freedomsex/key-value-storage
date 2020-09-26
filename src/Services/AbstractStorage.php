@@ -13,7 +13,12 @@ class AbstractStorage
         $this->cache = $memory;
     }
 
-    public function clear($key)
+    public function clear()
+    {
+        $this->cache->clear();
+    }
+
+    public function deleteItem($key)
     {
         $this->cache->deleteItem($key);
     }
