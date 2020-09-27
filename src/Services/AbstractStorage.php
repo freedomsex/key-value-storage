@@ -4,6 +4,7 @@
 namespace FreedomSex\Services;
 
 
+use http\Exception\InvalidArgumentException;
 use Psr\Cache\CacheItemPoolInterface;
 
 class AbstractStorage
@@ -13,8 +14,11 @@ class AbstractStorage
         $this->cache = $memory;
     }
 
-    public function clear()
+    public function clear($key = null)
     {
+        if ($key) {
+            throw new \InvalidArgumentException('Call with $key is deprecated');
+        }
         $this->cache->clear();
     }
 
@@ -50,7 +54,7 @@ class AbstractStorage
         $this->cache->save($item);
     }
 
-    public function deleteItem($key)
+    public function delete($key)
     {
         $this->cache->deleteItem($key);
     }
