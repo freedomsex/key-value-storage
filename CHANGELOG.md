@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/freedomsex/key-value-storage/compare/v2.0.1...v2.0.2) (2020-09-27)
+
+
+### Bug Fixes
+
+* deleteItem to delete ([fc10c5b](https://github.com/freedomsex/key-value-storage/commit/fc10c5bb40369501d4ffe23ff5db6ccaba62e84d))
+
 ### [2.0.1](https://github.com/freedomsex/key-value-storage/compare/v2.0.0...v2.0.1) (2020-09-26)
 
 
